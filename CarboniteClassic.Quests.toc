@@ -1,0 +1,15 @@
+## Interface: 11302
+## Title: Carbonite Quest Classic
+## Version: 1.13.2-0.1
+## Author: Rythal
+## Notes: Released Under GPL
+## DefaultState: Enabled
+## LoadOnDemand: 0
+## SavedVariables: NXQuest
+## RequiredDeps: CarboniteClassic
+
+Locales\locales.xml
+Data\QuestCats.lua
+Data\QuestNPC.lua
+Data\QuestData.xml
+NxQuest.lua
