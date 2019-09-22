@@ -6110,9 +6110,8 @@ function CarboniteQuest:OnQuestUpdate (event, ...)
 			auto = not auto
 		end
 
-		if auto then
+		if auto and IsQuestCompletable() then
 			CompleteQuest()
---			Nx.prt ("Auto turn in")
 		end
 		Nx.Quest.List:Refresh(event)
 		return
@@ -6124,7 +6123,6 @@ function CarboniteQuest:OnQuestUpdate (event, ...)
 		if auto then
 			if GetNumQuestChoices() == 0 then
 				GetQuestReward()
---				Nx.prt ("Auto turn in choice")
 			end
 		end
 		Nx.Quest.List:Refresh(event)
